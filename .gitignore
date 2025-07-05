@@ -1,0 +1,51 @@
+# Fichiers et dossiers générés par Airflow
+airflow.cfg
+airflow-webserver.pid
+airflow-scheduler.pid
+airflow-worker.pid
+airflow.db
+webserver_config.py
+unittests.cfg
+logs/
+plugins/
+dags/dag_id_temp_*.py # Si Airflow génère des fichiers temporaires de DAG
+
+# Dossiers et fichiers de données
+data/raw/*.json # Exclut tous les fichiers JSON bruts (y compris all_capitals_weather.json)
+data/raw/*.csv  # Exclut tous les fichiers CSV bruts (y compris historical_test.csv)
+data/raw/historical_kaggle/ # Exclut le dossier entier si vous l'avez
+data/raw/openweather/ # Exclut le dossier entier si vous l'avez
+data/processed/ # Exclut tout le contenu du dossier processed (où sont vos .parquet)
+
+# Fichiers de cache et temporaires
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store # macOS
+.env # Votre fichier .env pour les variables d'environnement (API keys, etc.)
+.vscode/ # Dossier de configuration VS Code (optionnel, si vous ne voulez pas le versionner)
+
+# Environnements virtuels
+venv/
+.venv/
+env
+.env/
+
+# Fichiers de logs génériques
+*.log
+*.out
+*.err
+
+# Fichiers spécifiques aux OS
+Thumbs.db # Windows
+desktop.ini # Windows
+
+# Fichiers de notebooks Jupyter
+# Si vous voulez exclure tous les notebooks, décommentez la ligne suivante:
+# *.ipynb
+# Si vous voulez inclure seulement certains notebooks (ex: EDA.ipynb), laissez la ligne commentée
+# et ajoutez explicitement ceux que vous voulez suivre.
+# Pour votre cas, vous voulez suivre EDA.ipynb, donc ne pas exclure tous les .ipynb
+
+# Fichiers de données temporaires ou de test qui ne devraient pas être versionnés
+# Si vous avez d'autres fichiers temporaires ou de test non listés ci-dessus, ajoutez-les ici.

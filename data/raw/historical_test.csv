@@ -1,0 +1,5 @@
+Date,City,Temperature_Celsius,Precipitation_mm
+2023-01-01,London,5.0,0.5
+2023-01-01,New York,-2.0,1.2
+2023-01-02,London,6.0,0.0
+2023-01-02,New York,-1.0,0.0
