@@ -40,12 +40,4 @@ env
 Thumbs.db # Windows
 desktop.ini # Windows
 
-# Fichiers de notebooks Jupyter
-# Si vous voulez exclure tous les notebooks, décommentez la ligne suivante:
-# *.ipynb
-# Si vous voulez inclure seulement certains notebooks (ex: EDA.ipynb), laissez la ligne commentée
-# et ajoutez explicitement ceux que vous voulez suivre.
-# Pour votre cas, vous voulez suivre EDA.ipynb, donc ne pas exclure tous les .ipynb
-
-# Fichiers de données temporaires ou de test qui ne devraient pas être versionnés
-# Si vous avez d'autres fichiers temporaires ou de test non listés ci-dessus, ajoutez-les ici.
+.ipynb_checkpoints/
