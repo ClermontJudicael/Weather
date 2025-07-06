@@ -98,17 +98,6 @@ Après l'exécution, une fenêtre de navigateur s'ouvrira automatiquement pour a
     pip install pandas numpy streamlit plotly
     ```
 
-3.  **Définir les variables d'environnement :**
-    Les scripts utilisent `AIRFLOW_HOME` pour localiser les données et `OPENWEATHER_API_KEY` pour l'API.
-    Vous devez définir ces variables dans votre session terminal avant d'exécuter les scripts :
-
-    ```bash
-    export AIRFLOW_HOME="/home/onii/Desktop/data" # Remplacez par le chemin absolu de votre dossier 'data'
-    export OPENWEATHER_API_KEY="votre_cle_api" # Remplacez par votre clé OpenWeather API réelle
-    ```
-
-    *Note : Si vous utilisez un fichier `.env` pour gérer vos variables d'environnement, vous devrez vous assurer que ces variables sont chargées dans votre environnement shell avant d'exécuter les scripts (par exemple, en utilisant `source .env` si vous avez une configuration qui le permet).*
-
 ## Étapes d'Utilisation
 
 1.  **Exécuter le pipeline ETL dans l'ordre :**
